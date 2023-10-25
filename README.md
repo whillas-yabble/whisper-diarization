@@ -14,16 +14,16 @@
   </a>
   <a href="https://twitter.com/intent/tweet?text=&url=https%3A%2F%2Fgithub.com%2FMahmoudAshraf97%2Fwhisper-diarization">
   <img src="https://img.shields.io/twitter/url/https/github.com/MahmoudAshraf97/whisper-diarization.svg?style=social" alt="Twitter">
-  </a> 
+  </a>
   </a>
   <a href="https://colab.research.google.com/github/MahmoudAshraf97/whisper-diarization/blob/main/Whisper_Transcription_%2B_NeMo_Diarization.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab">
   </a>
- 
+
 </p>
 
 
-# 
+#
 Speaker Diarization pipeline based on OpenAI Whisper
 I'd like to thank [@m-bain](https://github.com/m-bain) for Wav2Vec2 forced alignment, [@mu4farooqi](https://github.com/mu4farooqi) for punctuation realignment algorithm
 
@@ -62,7 +62,7 @@ scoop install ffmpeg
 ```
 pip install -r requirements.txt
 ```
-## Usage 
+## Usage
 
 ```
 python diarize.py -a AUDIO_FILE_NAME
