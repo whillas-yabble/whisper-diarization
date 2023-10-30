@@ -12,14 +12,14 @@ from pydub import AudioSegment
 
 from helpers import *
 
-mtypes = {"cpu": "int8", "cuda": "float16"}
+# mtypes = {"cpu": "int8", "cuda": "float16"}
 
-DEVICE=0
+DEVICE="cuda"
 
 def diarize(model_name: str, vocal_target, original_file_name: str, suppress_numerals=False):
     # Run on GPU with FP16
     whisper_model = WhisperModel(
-        model_name, device=DEVICE, compute_type=mtypes[DEVICE]
+        model_name, device="cuda", compute_type="float16"
     )
 
     # or run on GPU with INT8
