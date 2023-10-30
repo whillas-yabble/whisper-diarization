@@ -5,6 +5,16 @@ Need to:
 1. Find the right EC2 instance with the right virtual machine image
 2. Create a Dockerfile that can be deployed on this instance
 
+## Manually via Web Interface
+
+1. [EC2 console](https://ap-southeast-2.console.aws.amazon.com/ec2/home?region=ap-southeast-2#Home)
+2. Choose "Launch Instance"
+3. Choose an AMI, search for "Deep Learning". Choose something like "Deep Learning AMI GPU PyTorch 2.0.1"
+4. Choose a machine type "g4dn.2xlarge"
+5. Connect via SSH
+
+# Via command line
+
 ## Find the right instance type (with GPU)
 
 find a machine AMI that matches our specs i.e. CUDA 11.8
@@ -36,7 +46,7 @@ Returns a big list. These as the GPU instances types:
     inf1.xlarge
 
 look under Accelerated Computing here: https://aws.amazon.com/ec2/instance-types/
-Also need to check the prices.
+Also need to check [the prices](https://aws.amazon.com/ec2/pricing/on-demand/?refid=a5f6fe36-4e3c-4c1b-a71a-b795de7b4ed7).
 
 ## Find the right virtual machine (AMI) to use with our docker container.
 
